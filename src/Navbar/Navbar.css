@@ -1,0 +1,72 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    background-color: rgb(248, 202, 147);
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 100px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: auto; /* Add horizontal scroll */
+    white-space: nowrap; /* Prevent items from wrapping */
+    padding-bottom: 10px; /* Add some padding for the scroll */
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+/* Media query for 1280px */
+@media (max-width: 1280px) {
+    .nav-menu {
+        gap: 80px; /* Reduce gap between items for 1280px */
+    }
+}
+
+/* Media query for 1024px */
+@media (max-width: 1024px) {
+    .nav-menu {
+        gap: 60px; /* Reduce gap between items for 1024px */
+    }
+}
+
+/* Media query for 800px */
+@media (max-width: 800px) {
+    .nav-menu {
+        gap: 40px; /* Reduce gap between items for 800px */
+    }
+}
+
+/* Media query for 500px */
+@media (max-width: 500px) {
+    .nav-menu {
+        gap: 35px; /* Reduce gap between items for 500px */
+        font-size: 18px;
+    }
+}
+@media(max-width: 320px){
+    .nav-menu{
+        gap: px;
+    }
+}

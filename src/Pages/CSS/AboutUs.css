@@ -1,0 +1,100 @@
+.about-us {
+    width: 45%; /* Adjust the width as needed */
+    margin: 0 auto; /* Centers the entire content horizontally */
+    padding: 15px; /* Adds padding around the content */
+    background-color: #f4eaf0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow around the container */
+    border-radius: 8px; /* Optional: Rounds the corners of the container */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-us-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+.table-row-label {
+    width: 30%;
+    padding: 8px;
+    background-color: #f0a4dd;
+    vertical-align: top;
+}
+
+.table-row-label-text {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.table-row-value {
+    width: 70%;
+    padding: 8px;
+    background-color: #fff;
+    font-size: 14px;
+}
+
+.lower-part {
+    padding: 15px 0px;
+    padding-right: 30px;
+    margin: 0 auto;
+    width: 100%; /* Full width for the lower part */
+    text-align: left;
+}
+
+.lower-part h2 {
+    color: #e91e98;
+    font-size: 20px;
+}
+
+.custom-list {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.custom-list li::marker {
+    font-size: 1.2em;
+    margin-right: 0;
+}
+
+.info {
+    margin-top: 15px; /* Adds space above the info section */
+    font-size: 14px;
+    width: 100%; /* Full width for the info section */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    text-align: justify; 
+}
+
+.info h2 {
+    color: #e91e98;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.info p {
+    margin: px 0; /* Adds space between paragraphs */
+    padding: 0; /* Removes any padding from paragraphs */
+    font-size: 16px;
+
+}
+
+@media(max-width:1020px){
+    .about-us{
+        width: 70%;
+    }
+}
+@media(max-width: 500px){
+    .about-us{
+        width: 88%;
+    }
+}

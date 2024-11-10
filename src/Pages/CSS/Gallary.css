@@ -1,0 +1,49 @@
+.image-gallary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px; /* Set a maximum width for the gallery */
+  margin: 0 auto; /* Center the gallery on the page */
+  padding: 20px; /* Add padding around the gallery */
+}
+
+.image-container {
+  width: calc(50% - 10px); /* Two images per row */
+  box-sizing: border-box;
+}
+
+.image-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* Maintain image aspect ratio */
+  display: block;
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better visuals */
+}
+.image3{
+  width: 80%;
+}
+
+.image3 img{
+  object-fit: contain;
+  height: 300px;
+  object-position: top;
+  
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%; /* Images take full width on mobile devices */
+  }
+
+  .image-container img {
+    height: auto; /* Let the image height adjust automatically */
+    max-height: 200px; /* Prevent images from becoming too large on small screens */
+  }
+
+  .image3 img {
+    height: auto; /* Third image also adjusts height automatically */
+    max-height: 200px;
+  }
+}

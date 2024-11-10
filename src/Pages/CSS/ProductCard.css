@@ -1,0 +1,65 @@
+.product-card {
+    background-color: #f8d3eb; /* Light pink background */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    text-align: center;
+    min-height: 450px; /* Set a minimum height for the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+  }
+  
+  .product-title {
+    color: #e91e98; /* Text color */
+    margin-bottom: 15px;
+  }
+  
+  .download-button {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .download-button button {
+    background-color: #e91e98; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    margin: 0 auto 10px auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-grow: 1;
+  }
+  
+  .enquiry-button {
+    display: inline-block;
+  }
+  
+  .enquiry-button button {
+    background-color: #e91e98; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  @media(max-width: 500px){
+    .product-card{
+      padding: 15px;
+      width: 380px;
+    }
+    .product-card h2{
+      font-size: 20px;
+    }
+  }
+  

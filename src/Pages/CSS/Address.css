@@ -1,0 +1,47 @@
+address {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .responsive-map {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    margin: 0 auto; /* Center align the map */
+    max-width: 100%; /* Ensure the map doesn't exceed the container */
+  }
+  
+  .responsive-map iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    address {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .responsive-map {
+      padding-bottom: 75%; /* Adjust aspect ratio to 4:3 for smaller screens */
+    }
+  }
+  
+  /* Media query for very small screens */
+  @media (max-width: 480px) {
+    address {
+      font-size: 1rem; /* Further reduce font size */
+    }
+  
+    .responsive-map {
+      padding-bottom: 100%; /* Adjust to square ratio on very small screens */
+    }
+  }
+  

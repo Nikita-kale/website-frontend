@@ -1,0 +1,115 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #E6E6FA 0%, #F5F5DC 100%);
+    width:  100%;
+    height: 80vh;
+}
+
+
+.enquiry-form-container {
+    width: 420px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+   
+}
+
+.enquiry-form-container::before, 
+.enquiry-form-container::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #E91E63;
+}
+
+.enquiry-form-container::before {
+    top: -5px;
+    left: -5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+
+.enquiry-form-container::after {
+    bottom: -5px;
+    right: -5px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 20px;
+}
+
+.enquiry-form-container h2 {
+    color: rgb(245, 67, 67);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.enquiry-form input, 
+.enquiry-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.enquiry-form .input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.enquiry-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+.enquiry-form button {
+    padding: 10px;
+    border: none;
+    background-color:rgb(245, 67, 67);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.enquiry-form button:hover {
+    background-color: #c2185b;
+}
+
+@media(max-width: 800px){
+    .enquiry-form-container{
+        width: 380px;
+    }
+    .enquiry-form{
+        width: 100%;
+    }
+  .enquiry-form input, 
+  .enquiry-form textarea {
+    width: 100%;
+    }
+}
+@media(max-width: 480px){
+    .enquiry-form-container{
+        width: 340px;
+    }
+   .enquiry-form{
+    width: 100%;
+   }
+
+}

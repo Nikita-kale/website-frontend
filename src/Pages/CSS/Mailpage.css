@@ -1,0 +1,88 @@
+/* Mailpage.css */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  /* Popup styling */
+.popup {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 16px;
+  }
+  
+  .popup.error {
+    background-color: #f44336; /* Red background for errors */
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    input[type="submit"] {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    form {
+      padding: 12px;
+      width: 380px;
+    }
+  
+    input[type="submit"] {
+      width: 100%;
+    }
+  }
+  
